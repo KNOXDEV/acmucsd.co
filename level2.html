@@ -1,0 +1,70 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <title>ACM @ UCSD</title>
+    <link href="/static/css/2.e143e5af.chunk.css" rel="stylesheet">
+    <link href="/static/css/main.38b4c1de.chunk.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="root">
+    <div class="login-layout">
+        <div class="header-holder">
+            <div class="header-container">
+                <div class="header-content">
+                    <div class="header"><a aria-current="page" class="title active" href="/"><img class="logo"
+                                                                                                  src="/static/media/logo.2d5d8798.png"
+                                                                                                  alt="ACM Logo"><span
+                            class="subheading">&nbsp;Membership Portal</span></a>
+                        <div class="profile"></div>
+                    </div>
+                    <div class="wainbow"></div>
+                </div>
+                <div class="header-padding"></div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="signin-card">
+                <h2 class="title" id="response">Welcome to<br>Level 2!</h2>
+                <form action="/login2" method="post" class="form">
+                    <div class="form-item">
+                        <div class="form-input">
+                            <div class="icon-container"><img class="icon" alt=""
+                                                             src="/static/media/email-icon.fc5e596a.svg"></div>
+                            <input name="email" type="text" placeholder="Email (user@ucsd.edu)" class="input-box"
+                                   value="">
+                        </div>
+                    </div>
+                    <div class="form-item">
+                        <div class="form-input">
+                            <div class="icon-container"><img class="icon" alt=""
+                                                             src="/static/media/password-icon.dd3320c9.svg"></div>
+                            <input name="password" type="password" placeholder="Password" class="input-box" value="">
+                        </div>
+                    </div>
+                    <div class="forgot-container"><a href="#">
+                        <p class="forgot">Forgot your password?</p>
+                    </a></div>
+                    <button type="submit" class="sign-in">Sign In</button>
+                    <a href="#">
+                        <button type="button" class="sign-up">Sign Up</button>
+                    </a>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+  if (document.location.hash === '#unauthorized') {
+    document.getElementById("response").innerText = "Login Failed";
+  } else if (document.location.hash === '#error') {
+    document.getElementById("response").innerText = "Unknown Error";
+  }
+</script>
+</body>
+
+</html>

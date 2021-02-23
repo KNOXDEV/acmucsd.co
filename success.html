@@ -1,0 +1,43 @@
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <link rel="shortcut icon" href="/static/favicon.ico">
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <meta name="theme-color" content="#000000">
+    <title>ACM @ UCSD</title>
+    <link href="/static/css/2.e143e5af.chunk.css" rel="stylesheet">
+    <link href="/static/css/main.38b4c1de.chunk.css" rel="stylesheet">
+</head>
+
+<body>
+<div id="root">
+    <div class="login-layout">
+        <div class="header-holder">
+            <div class="header-container">
+                <div class="header-content">
+                    <div class="header"><a aria-current="page" class="title active" href="/"><img class="logo"
+                                                                                                  src="/static/media/logo.2d5d8798.png"
+                                                                                                  alt="ACM Logo"><span
+                            class="subheading">&nbsp;Membership Portal</span></a>
+                        <div class="profile"></div>
+                    </div>
+                    <div class="wainbow"></div>
+                </div>
+                <div class="header-padding"></div>
+            </div>
+        </div>
+        <div class="contents">
+            <div class="signin-card">
+                <h2 class="title" id="response">Thanks for playing!</h2>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var level = document.location.hash.substring(1);
+    document.getElementById("response").innerText = "Thanks for clearing Level " + level;
+    </script>
+</body>
+
+</html>
